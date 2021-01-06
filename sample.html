@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <title>Lighbox</title>
+    <style>
+           .container{
+            padding: 50px;
+            background-color: #ddd;
+            width: 80%;
+          margin: auto;  
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+        }
+        .image img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image">
+            <img  lightbox   src="https://picsum.photos/id/215/500/300" alt="">
+        </div>
+        <div class="image">
+            <img   lightbox  src="https://picsum.photos/id/216/500/300" alt="">
+        </div>
+        <div class="image">
+            <img   lightbox  src="https://picsum.photos/id/217/500/300" alt="">
+        </div>
+        <div class="image">
+            <img   lightbox  src="https://picsum.photos/id/218/500/300" alt="">
+        </div>
+        <div class="image">
+            <img   lightbox  src="https://picsum.photos/id/219/500/300" alt="">
+        </div>
+        <div class="image">
+            <img   lightbox  src="https://picsum.photos/id/220/500/300" alt="">
+        </div>
+    </div>
+
+
+    <script src="dist/js/lightbox.js"></script>
+
+    <script>
+
+        //lightbox cutomzation
+        lightbox.option( { 
+            backgroundOpacity : 1,
+            imageTransitionTiming : .2, 
+            disableNavigation : false,
+            disableInfo : true,
+            slideShowTiming : 1, 
+        } );
+
+            
+    </script>
+
+</body>
+</html>
